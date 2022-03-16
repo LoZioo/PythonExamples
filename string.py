@@ -1,6 +1,5 @@
 # https://realpython.com/python-f-strings/#simple-syntax
 
-from audioop import mul
 import os
 os.system("clear")
 
@@ -10,27 +9,27 @@ pi = 3.14
 print("pi: " + str(pi))
 
 # Indicizzazione dal primo carattere
-str = "python"
-print(str[0])
+something = "python"
+print(something[0])
 
 # Si può indicizzare anche partendo dall'ultimo carattere mettendo indici negativi.
 # ultimo carattere:
-print(str[-1])
+print(something[-1])
 
 # Tutti i caratteri dal 2 al 4
-print(str[2:4])
+print(something[2:4])
 
 # Stampa formattata:
 # C like
-print("str: %s, di nuovo: %s!" % (str, str))
+print("str: %s, di nuovo: %s!" % (something, something))
 
 # str.format(): vecchio modo python
-print("str: {}!".format(str))
-print("str: {nome_linguaggio}!".format(nome_linguaggio=str))
+print("str: {}!".format(something))
+print("str: {nome_linguaggio}!".format(nome_linguaggio=something))
 
 # F: nuovo modo python
-print(F"str: {str}!")
-print(f"str: {str}!")
+print(F"str: {something}!")
+print(f"str: {something}!")
 
 # Stringa multiriga
 multiriga = f"""
@@ -41,3 +40,12 @@ pi: {pi}
 """
 
 print(multiriga)
+
+# Lunghezza di una stringa
+print(str(len(multiriga)) + "\n")
+
+
+# Per verificare la presenza di una sottostringa in una stringa
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
