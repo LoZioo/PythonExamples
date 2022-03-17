@@ -28,8 +28,3 @@ print(x)
 # list (o array) (mutabile)
 x = ["apple", "banana", "cherry", 123]
 print(x)
-
-# Verifica di appartenenza
-thislist = ["apple", "banana", "cherry"]
-if "apple" in thislist:
-  print("Yes, 'apple' is in the fruits list")
